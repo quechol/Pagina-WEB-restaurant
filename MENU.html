@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Header-->
+    <div class="header">
+        <img id="logo" src="Brindisi/logo.jpg" alt="">
+    </div>
+</head>
+<body>
+    <!--Barra de navegacion-->
+    <div class="navbar">
+        <a href="Index.html">INICIO</a>
+        <a id="paginaActual" href="MENU.html">MENU</a>
+        <a href="ORDENA.html">ORDENA</a>
+        <div class="dropdown">
+            <button class="dropbtn"> BRINDISI
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="ENCUENTRANOS.html">ENCUENTRANOS</a>
+                <a href="ACERCA.html">ACERCA</a>
+            </div>
+        </div>
+    </div>
+    <!--Contenido-->
+    <div class="row">
+        <div class="main">
+            <!--Menu-->
+            <br>
+            <div class="separator">E N S A L A D A S</div>
+            <div class="row">
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form>
+                            <p>De la casa</p>
+                            <p>Mezcla de lechugas, jamón serrano, queso azul, nuez, pera y balsámico.</p>
+                            <p>Precio:</p>
+                            <p id="precio0"></p>
+                            <input id="en1" type="number" min="0">
+                            <button id="btnen1" onclick="return agregaMenu(agregaMenu);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/ensaladadelacasa.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Fresa melocotón</p>
+                            <p>Mezcla de lechuga, fresas, melocotón, queso de cabra, frutos secos y balsámico.</p>
+                            <p>Precio:</p>
+                            <p id="precio1"></p>
+                            <input id="en2" type="number" min="0">
+                            <button id="btnen2" onclick="return agregaMenu2(agregaMenu2);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/fresamelocoton.jpg" width="50%">
+                    </div>
+                </div>
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Pollo</p>
+                            <p>Mezcla de lechugas, pollo, aguacate, nuez de la india, champiñón y parmesano.</p>
+                            <p>Precio:</p>
+                            <p id="precio2"></p>
+                            <input id="en3" type="number" min="0">
+                            <button id="btnen3" onclick="return agregaMenu3(agregaMenu3);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/ensaladadepollo.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Salmón</p>
+                            <p>Mezcla de lechugas, salmón, piñón tostado y vinagreta de mostaza y miel.</p>
+                            <p>Precio:</p>
+                            <p id="precio3"></p>
+                            <input id="en4" type="number" min="0">
+                            <button id="btnen4" onclick="return agregaMenu4(agregaMenu4);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/ensaladasalmon.jpg" width="50%">
+                    </div>
+                </div>
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Camarón</p>
+                            <p>Mezcla de lechugas, camarones, nanranja, jitomate y parmesano.</p>
+                            <p>Precio:</p>
+                            <p id="precio4"></p>
+                            <input id="en5" type="number" min="0">
+                            <button id="btnen5" onclick="return agregaMenu5(agregaMenu5);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/ensaladacamaron.jpg" width="50%">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="separator">E N T R E P A N E S</div>
+            <div class="row">
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Portobello</p>
+                            <p>Pan artesanal, aderezo, portobello cocinado al ajo, queso, lechuga y jitomate.</p>
+                            <p>Precio:</p>
+                            <p id="precio5"></p>
+                            <input id="en6" type="number" min="0">
+                            <button id="btnen6" onclick="return agregaMenu6(agregaMenu6);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/portobello.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Pibil</p>
+                            <p>Pan artesanal, frijoles negros, cochinita pibil y queso gouda.</p>
+                            <p>Precio:</p>
+                            <p id="precio6"></p>
+                            <input id="en7" type="number" min="0">
+                            <button id="btnen7" onclick="return agregaMenu7(agregaMenu7);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/pibill.jpg" width="50%">
+                    </div>
+                </div>
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Europa</p>
+                            <p>Pan artesanal, aderezo, jamón serrano, salami, queso mozzarella fresco, lechuga y jitomate.</p>
+                            <p>Precio:</p>
+                            <p id="precio7"></p>
+                            <input id="en8" type="number" min="0">
+                            <button id="btnen8" onclick="return agregaMenu8(agregaMenu8);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/europa.jpg" width="50%">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="separator">P A S T A S</div>
+            <div class="row">
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Camarón</p>
+                            <p>camarones al ajillo, paprika y queso parmesano.</p>
+                            <p>Precio:</p>
+                            <p id="precio8"></p>
+                            <input id="en9" type="number" min="0">
+                            <button id="btnen9" onclick="return agregaMenu9(agregaMenu9);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/pastacamaron.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Puttanesca</p>
+                            <p>Anchoas, aceitunas negras, salsa de jitomate, aji y queso parmesano.</p>
+                            <p>Precio:</p>
+                            <p id="precio9"></p>
+                            <input id="en10" type="number" min="0">
+                            <button id="btnen10" onclick="return agregaMenu10(agregaMenu10);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/puttanesca.jpg" width="50%">
+                    </div>
+                    <div class="row-imagen">
+                        <div class="column-menu">
+                            <form action="">
+                                <p>Alfredo con pollo</p>
+                                <p>Pollo a la planchas, salsa cremosa y queso parmesano.</p>
+                                <p>Precio:</p>
+                                <p id="precio10"></p>
+                                <input id="en11" type="number" min="0">
+                                <button id="btnen11" onclick="return agregaMenu11(agregaMenu11);">OK</button>
+                            </form>
+                        </div>
+                        <div class="column-menuImg">
+                            <img src="Fotos/Menu/alfredoconpollo.jpg" width="50%">
+                        </div>
+                        <div class="column-menu">
+                            <form action="">
+                                <p>Carbonara</p>
+                                <p>Salsa blanca, huevo, pancetta, champiñón, queso parmesano.</p>
+                                <p>Precio:</p>
+                                <p id="precio11"></p>
+                                <input id="en12" type="number" min="0">
+                                <button id="btnen12" onclick="return agregaMenu12(agregaMenu12);">OK</button>
+                            </form>
+                        </div>
+                        <div class="column-menuImg">
+                            <img src="Fotos/Menu/carbonara.jpg" width="50%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="separator">S O P A S</div>
+            <div class="row">
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Mínestrone</p>
+                            <p>Pasta, carne, pancetta, vegetales en fondde de res y jitomate.</p>
+                            <p>Precio:</p>
+                            <p id="precio12"></p>
+                            <input id="en13" type="number" min="0">
+                            <button id="btnen13" onclick="return agregaMenu13(agregaMenu13);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/minestrone.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Tres quesos</p>
+                            <p>Queso azul, queso de cabra y queso brié servido en un pan campesino.</p>
+                            <p>Precio:</p>
+                            <p id="precio13"></p>
+                            <input id="en14" type="number" min="0">
+                            <button id="btnen14" onclick="return agregaMenu14(agregaMenu14);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/tresquesos.jpg" width="50%">
+                    </div>
+                </div>
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>De cebolla</p>
+                            <p>Clásico francés dentro de un pan campesino y queso gratinado.</p>
+                            <p>Precio:</p>
+                            <p id="precio14"></p>
+                            <input id="en15" type="number" min="0">
+                            <button id="btnen15" onclick="return agregaMenu15(agregaMenu15);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/decebolla.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Jitomate</p>
+                            <p>Sopa de jitomate horneado y albahaca, crouton gigante al gratín</p>
+                            <p>Precio:</p>
+                            <p id="precio15"></p>
+                            <input id="en16" type="number" min="0">
+                            <button id="btnen16" onclick="return agregaMenu16(agregaMenu16);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/jitomate.jpg" width="50%">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="separator">H A M B U R G U E S A S</div>
+            <div class="row">
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Arte-Sano</p>
+                            <p>Bollo artesanal, 200 grs de carne, queso cheddar, pepinillos, jitomate y cebolla.</p>
+                            <p>Precio:</p>
+                            <p id="precio16"></p>
+                            <input id="en17" type="number" min="0">
+                            <button id="btnen17" onclick="return agregaMenu17(agregaMenu17);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/artesano.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Arte-Sano BBQ</p>
+                            <p>Bollo artesanal, 200 grs de carne, queso cheddar, cebolla, BBQ y jitomate.</p>
+                            <p>Precio:</p>
+                            <p id="precio17"></p>
+                            <input id="en18" type="number" min="0">
+                            <button id="btnen18" onclick="return agregaMenu18(agregaMenu18);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/artesanobbq.jpg.crdownload" width="50%">
+                    </div>
+                </div>
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Arrachera</p>
+                            <p>Bollo artesanal, 200 grs de arrachera, queso gouda, guacamole, jitomate y lechuga.</p>
+                            <p>Precio:</p>
+                            <p id="precio18"></p>
+                            <input id="en19" type="number" min="0">
+                            <button id="btnen19" onclick="return agregaMenu19(agregaMenu19);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/arrachera.jpg" width="50%">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="separator">P I Z Z A S</div>
+            <div class="row">
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Arte-Sano</p>
+                            <p>35 cm, 8 rebanadas. Salsa, queso, pimientos, champiñón, pancetta y carne molida.</p>
+                            <p>Precio:</p>
+                            <p id="precio19"></p>
+                            <input id="en20" type="number" min="0">
+                            <button id="btnen20" onclick="return agregaMenu20(agregaMenu20);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/pizzaartesano.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Arte-Sano 2</p>
+                            <p>35 cm, 8 rebanadas. Salsa, queso, pimientos, champiñón, chorizo argentino y chistorra.</p>
+                            <p>Precio:</p>
+                            <p id="precio20"></p>
+                            <input id="en21" type="number" min="0">
+                            <button id="btnen21" onclick="return agregaMenu21(agregaMenu21);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/pizzaartesano2.jpg" width="50%">
+                    </div>
+                </div>
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Peperoni</p>
+                            <p>35 cm, 8 rebanadas. Salsa, queso y peperoni.</p>
+                            <p>Precio:</p>
+                            <p id="precio21"></p>
+                            <input id="en22" type="number" min="0">
+                            <button id="btnen22" onclick="return agregaMenu22(agregaMenu22);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/peperoni.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Tres quesos</p>
+                            <p>35 cm, 8 rebanadas. Salsa, quesos mozzarella, queso azul, queso parmesano y aceitunas negras.</p>
+                            <p>Precio:</p>
+                            <p id="precio22"></p>
+                            <input id="en23" type="number" min="0">
+                            <button id="btnen23" onclick="return agregaMenu23(agregaMenu23);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/pizzatresquesos.jpg" width="50%">
+                    </div>
+                </div>
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Mar y tierra</p>
+                            <p>35 cm, 8 rebanadas. Salsa, queso, champiñón, pimiento, camarones, atún y carne molida.</p>
+                            <p>Precio:</p>
+                            <p id="precio23"></p>
+                            <input id="en24" type="number" min="0">
+                            <button id="btnen24" onclick="return agregaMenu24(agregaMenu24);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/marytierra.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Jamón serrano</p>
+                            <p>35 cm, 8 rebanadas. Salsa, quesos mozzarella, queso crema, jitomate, jamón serrano y albahaca.</p>
+                            <p>Precio:</p>
+                            <p id="precio24"></p>
+                            <input id="en25" type="number" min="0">
+                            <button id="btnen25" onclick="return agregaMenu25(agregaMenu25);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/jamonserrano.jpg" width="50%">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="separator">P O S T R E S</div>
+            <div class="row">
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Panacotta</p>
+                            <p>Postre de crema y café, frutos rojos y salsa de café.</p>
+                            <p>Precio:</p>
+                            <p id="precio25"></p>
+                            <input id="en26" type="number" min="0">
+                            <button id="btnen26" onclick="return agregaMenu26(agregaMenu26);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/panacotta.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Apfelstrudel</p>
+                            <p>Estilo vienés con relleno de manzana, nuez, pasas, canela y helado.</p>
+                            <p>Precio:</p>
+                            <p id="precio26"></p>
+                            <input id="en27" type="number" min="0">
+                            <button id="btnen27" onclick="return agregaMenu27(agregaMenu27);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/apfelstrudel.jpg" width="50%">
+                    </div>
+                </div>
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Tiramisú</p>
+                            <p>Postre italiano con queso mascarpone y café.</p>
+                            <p>Precio:</p>
+                            <p id="precio27"></p>
+                            <input id="en28" type="number" min="0">
+                            <button id="btnen28" onclick="return agregaMenu28(agregaMenu28);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/tiramisu.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Brownie</p>
+                            <p>De chocolate y nuez, lo servimos con helado y frutos rojos.</p>
+                            <p>Precio:</p>
+                            <p id="precio28"></p>
+                            <input id="en29" type="number" min="0">
+                            <button id="btnen29" onclick="return agregaMenu29(agregaMenu29);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/brownie.jpg" width="50%">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="separator">B E B I D A S   D E   L A   C A S A</div>
+            <div class="row">
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Café shaker</p>
+                            <p>Café frío con crema batida o helado 400 ml.</p>
+                            <p>Precio:</p>
+                            <p id="precio29"></p>
+                            <input id="en30" type="number" min="0">
+                            <button id="btnen30" onclick="return agregaMenu30(agregaMenu30);">OK</button> 
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/cafeshaker.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Congo</p>
+                            <p>Malteada de crema de cacahuate 400 ml.</p>
+                            <p>Precio:</p>
+                            <p id="precio30"></p>
+                            <input id="en31" type="number" min="0">
+                            <button id="btnen31" onclick="return agregaMenu31(agregaMenu31);">OK</button> 
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/congo.jfif" width="50%">
+                    </div>
+                </div>
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Sweet jackie</p>
+                            <p>Malteada de nutella y jack Daniel's 400 ml.</p>
+                            <p>Precio:</p>
+                            <p id="precio31"></p>
+                            <input id="en32" type="number" min="0">
+                            <button id="btnen32" onclick="return agregaMenu32(agregaMenu32);">OK</button> 
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/sweetjackie.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Refresco natural</p>
+                            <p>Frutas naturales con base de agua mineral 400 ml.</p>
+                            <p>Precio:</p>
+                            <p id="precio32"></p>
+                            <input id="en33" type="number" min="0">
+                            <button id="btnen33" onclick="return agregaMenu33(agregaMenu33);">OK</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/refresconatural.jpg" width="50%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Fin menu-->
+        <div class="side">
+            <h4>Carrito</h4>
+            <p id="es1"></p>
+            <p id="st1"></p>
+            <p id="es2"></p>
+            <p id="st2"></p>
+            <p id="es3"></p>
+            <p id="st3"></p>
+            <p id="es4"></p>
+            <p id="st4"></p>
+            <p id="es5"></p>
+            <p id="st5"></p>
+            <p id="es6"></p>
+            <p id="st6"></p>
+            <p id="es7"></p>
+            <p id="st7"></p>
+            <p id="es8"></p>
+            <p id="st8"></p>
+            <p id="es9"></p>
+            <p id="st9"></p>
+            <p id="es10"></p>
+            <p id="st10"></p>
+            <p id="es11"></p>
+            <p id="st11"></p>
+            <p id="es12"></p>
+            <p id="st12"></p>
+            <p id="es13"></p>
+            <p id="st13"></p>
+            <p id="es14"></p>
+            <p id="st14"></p>
+            <p id="es15"></p>
+            <p id="st15"></p>
+            <p id="es16"></p>
+            <p id="st16"></p>
+            <p id="es17"></p>
+            <p id="st17"></p>
+            <p id="es18"></p>
+            <p id="st18"></p>
+            <p id="es19"></p>
+            <p id="st19"></p>
+            <p id="es20"></p>
+            <p id="st20"></p>
+            <p id="es21"></p>
+            <p id="st21"></p>
+            <p id="es22"></p>
+            <p id="st22"></p>
+            <p id="es23"></p>
+            <p id="st23"></p>
+            <p id="es24"></p>
+            <p id="st24"></p>
+            <p id="es25"></p>
+            <p id="st25"></p>
+            <p id="es26"></p>
+            <p id="st26"></p>
+            <p id="es27"></p>
+            <p id="st27"></p>
+            <p id="es28"></p>
+            <p id="st28"></p>
+            <p id="es29"></p>
+            <p id="st29"></p>
+            <p id="es30"></p>
+            <p id="st30"></p>
+            <p id="es31"></p>
+            <p id="st31"></p>
+            <p id="es32"></p>
+            <p id="st32"></p>
+            <p id="es33"></p>
+            <p id="st33"></p>
+            <button onclick="return continuarPedido(continuarPedido);">FINALIZAR PEDIDO</button>
+        </div>
+    </div>
+    <!--Fin contenido-->
+</body>
+<!--Pie de pagina-->
+<footer class="footer">
+    <h2>PIE</h2>
+</footer>
+</html>
+<!--Script-->
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="scriptStorage.js"></script>

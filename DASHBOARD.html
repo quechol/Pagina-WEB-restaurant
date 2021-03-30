@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brindisi - ArteSano</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Header-->
+    <div class="header">
+        <img id="logo" src="Brindisi/logo.jpg" alt="">
+        <h1>DASHBOARD</h1>
+    </div>
+</head>
+<body>
+    <!--Barra de navegacion-->
+    <div class="navbar">
+        <a id="paginaActual" href="Index.html">MENU</a>
+        <a href="PEDIDOS.html">PEDIDOS</a>
+        <a href="Index.html">SITIO</a>
+    </div>
+    <!--Contenido-->
+    <div class="row">
+        <div class="main">
+            <br>
+            <div class="separator">E N S A L A D A S</div>
+            <div class="row">
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>De la casa</p>
+                            <p>Mezcla de lechugas, jamón serrano, queso azul, nuez, pera y balsámico.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio0"></p>
+                            <input id="cambia0" type="number" min="0">
+                            <button id="mP0" onclick="return modificaPrecio0(modificaPrecio0);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/ensaladadelacasa.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Fresa melocotón</p>
+                            <p>Mezcla de lechuga, fresas, melocotón, queso de cabra, frutos secos y balsámico.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio1"></p>
+                            <input id="cambia1" type="number" min="0">
+                            <button id="mP1" onclick="return modificaPrecio1(modificaPrecio1);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/fresamelocoton.jpg" width="50%">
+                    </div>
+                </div>
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Pollo</p>
+                            <p>Mezcla de lechugas, pollo, aguacate, nuez de la india, champiñón y parmesano.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio2"></p>
+		                    <input id="cambia2" type="number" min="0">
+                            <button id="mP2" onclick="return modificaPrecio2(modificaPrecio2);">MODIFICAR PRECIO</button>	
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/ensaladadepollo.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Salmón</p>
+                            <p>Mezcla de lechugas, salmón, piñón tostado y vinagreta de mostaza y miel.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio3"></p>
+				            <input id="cambia3" type="number" min="0">
+                            <button id="mP3" onclick="return modificaPrecio3(modificaPrecio3);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/ensaladasalmon.jpg" width="50%">
+                    </div>
+                </div>
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Camarón</p>
+                            <p>Mezcla de lechugas, camarones, nanranja, jitomate y parmesano.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio4"></p>
+				<input id="cambia4" type="number" min="0">
+                            <button id="mP4" onclick="return modificaPrecio4(modificaPrecio4);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/ensaladacamaron.jpg" width="50%">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="separator">E N T R E P A N E S</div>
+            <div class="row">
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Portobello</p>
+                            <p>Pan artesanal, aderezo, portobello cocinado al ajo, queso, lechuga y jitomate.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio5"></p>
+				            <input id="cambia5" type="number" min="0">
+                            <button id="mP5" onclick="return modificaPrecio5(modificaPrecio5);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/portobello.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Pibil</p>
+                            <p>Pan artesanal, frijoles negros, cochinita pibil y queso gouda.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio6"></p>
+				            <input id="cambia6" type="number" min="0">
+                            <button id="mP6" onclick="return modificaPrecio6(modificaPrecio6);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/pibill.jpg" width="50%">
+                    </div>
+                </div>
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Europa</p>
+                            <p>Pan artesanal, aderezo, jamón serrano, salami, queso mozzarella fresco, lechuga y jitomate.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio7"></p>
+				            <input id="cambia7" type="number" min="0">
+                            <button id="mP7" onclick="return modificaPrecio7(modificaPrecio7);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/europa.jpg" width="50%">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="separator">P A S T A S</div>
+            <div class="row">
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Camarón</p>
+                            <p>camarones al ajillo, paprika y queso parmesano.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio8"></p>
+				<input id="cambia8" type="number" min="0">
+                            <button id="mP8" onclick="return modificaPrecio8(modificaPrecio8);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/pastacamaron.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Puttanesca</p>
+                            <p>Anchoas, aceitunas negras, salsa de jitomate, aji y queso parmesano.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio9"></p>
+				            <input id="cambia9" type="number" min="0">
+                            <button id="mP9" onclick="return modificaPrecio9(modificaPrecio9);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/puttanesca.jpg" width="50%">
+                    </div>
+                    <div class="row-imagen">
+                        <div class="column-menu">
+                            <form action="">
+                                <p>Alfredo con pollo</p>
+                                <p>Pollo a la planchas, salsa cremosa y queso parmesano.</p>
+                                <p>Precio actual:</p>
+                                <p id="precio10"></p>
+				                <input id="cambia10" type="number" min="0">
+                            <button id="mP10" onclick="return modificaPrecio10(modificaPrecio10);">MODIFICAR PRECIO</button>
+                            </form>
+                        </div>
+                        <div class="column-menuImg">
+                            <img src="Fotos/Menu/alfredoconpollo.jpg" width="50%">
+                        </div>
+                        <div class="column-menu">
+                            <form action="">
+                                <p>Carbonara</p>
+                                <p>Salsa blanca, huevo, pancetta, champiñón, queso parmesano.</p>
+                                <p>Precio actual:</p>
+                                <p id="precio11"></p>
+				                <input id="cambia11" type="number" min="0">
+                            <button id="mP11" onclick="return modificaPrecio11(modificaPrecio11);">MODIFICAR PRECIO</button>
+                            </form>
+                        </div>
+                        <div class="column-menuImg">
+                            <img src="Fotos/Menu/carbonara.jpg" width="50%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="separator">S O P A S</div>
+            <div class="row">
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Mínestrone</p>
+                            <p>Pasta, carne, pancetta, vegetales en fondde de res y jitomate.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio12"></p>
+				            <input id="cambia12" type="number" min="0">
+                            <button id="mP12" onclick="return modificaPrecio12(modificaPrecio12);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/minestrone.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Tres quesos</p>
+                            <p>Queso azul, queso de cabra y queso brié servido en un pan campesino.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio13"></p>
+				            <input id="cambia13" type="number" min="0">
+                            <button id="mP13" onclick="return modificaPrecio13(modificaPrecio13);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/tresquesos.jpg" width="50%">
+                    </div>
+                </div>
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>De cebolla</p>
+                            <p>Clásico francés dentro de un pan campesino y queso gratinado.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio14"></p>
+				            <input id="cambia14" type="number" min="0">
+                            <button id="mP14" onclick="return modificaPrecio14(modificaPrecio14);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/decebolla.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Jitomate</p>
+                            <p>Sopa de jitomate horneado y albahaca, crouton gigante al gratín</p>
+                            <p>Precio actual:</p>
+                            <p id="precio15"></p>
+				            <input id="cambia15" type="number" min="0">
+                            <button id="mP15" onclick="return modificaPrecio15(modificaPrecio15);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/jitomate.jpg" width="50%">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="separator">H A M B U R G U E S A S</div>
+            <div class="row">
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Arte-Sano</p>
+                            <p>Bollo artesanal, 200 grs de carne, queso cheddar, pepinillos, jitomate y cebolla.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio16"></p>
+				            <input id="cambia16" type="number" min="0">
+                            <button id="mP16" onclick="return modificaPrecio16(modificaPrecio16);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/artesano.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Arte-Sano BBQ</p>
+                            <p>Bollo artesanal, 200 grs de carne, queso cheddar, cebolla, BBQ y jitomate.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio17"></p>
+				            <input id="cambia17" type="number" min="0">
+                            <button id="mP17" onclick="return modificaPrecio17(modificaPrecio17);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/artesanobbq.jpg.crdownload" width="50%">
+                    </div>
+                </div>
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Arrachera</p>
+                            <p>Bollo artesanal, 200 grs de arrachera, queso gouda, guacamole, jitomate y lechuga.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio18"></p>
+				            <input id="cambia18" type="number" min="0">
+                            <button id="mP18" onclick="return modificaPrecio18(modificaPrecio18);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/arrachera.jpg" width="50%">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="separator">P I Z Z A S</div>
+            <div class="row">
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Arte-Sano</p>
+                            <p>35 cm, 8 rebanadas. Salsa, queso, pimientos, champiñón, pancetta y carne molida.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio19"></p>
+				            <input id="cambia19" type="number" min="0">
+                            <button id="mP19" onclick="return modificaPrecio19(modificaPrecio19);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/pizzaartesano.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Arte-Sano 2</p>
+                            <p>35 cm, 8 rebanadas. Salsa, queso, pimientos, champiñón, chorizo argentino y chistorra.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio20"></p>
+				            <input id="cambia20" type="number" min="0">
+                            <button id="mP20" onclick="return modificaPrecio20(modificaPrecio20);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/pizzaartesano2.jpg" width="50%">
+                    </div>
+                </div>
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Peperoni</p>
+                            <p>35 cm, 8 rebanadas. Salsa, queso y peperoni.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio21"></p>
+				            <input id="cambia21" type="number" min="0">
+                            <button id="mP21" onclick="return modificaPrecio21(modificaPrecio21);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/peperoni.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Tres quesos</p>
+                            <p>35 cm, 8 rebanadas. Salsa, quesos mozzarella, queso azul, queso parmesano y aceitunas negras.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio22"></p>
+				            <input id="cambia22" type="number" min="0">
+                            <button id="mP22" onclick="return modificaPrecio22(modificaPrecio22);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/pizzatresquesos.jpg" width="50%">
+                    </div>
+                </div>
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Mar y tierra</p>
+                            <p>35 cm, 8 rebanadas. Salsa, queso, champiñón, pimiento, camarones, atún y carne molida.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio23"></p>
+				            <input id="cambia23" type="number" min="0">
+                            <button id="mP23" onclick="return modificaPrecio23(modificaPrecio23);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/marytierra.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Jamón serrano</p>
+                            <p>35 cm, 8 rebanadas. Salsa, quesos mozzarella, queso crema, jitomate, jamón serrano y albahaca.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio24"></p>
+				            <input id="cambia24" type="number" min="0">
+                            <button id="mP24" onclick="return modificaPrecio24(modificaPrecio24);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/jamonserrano.jpg" width="50%">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="separator">P O S T R E S</div>
+            <div class="row">
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Panacotta</p>
+                            <p>Postre de crema y café, frutos rojos y salsa de café.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio25"></p>
+				            <input id="cambia25" type="number" min="0">
+                            <button id="mP25" onclick="return modificaPrecio25(modificaPrecio25);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/panacotta.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Apfelstrudel</p>
+                            <p>Estilo vienés con relleno de manzana, nuez, pasas, canela y helado.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio26"></p>
+				            <input id="cambia26" type="number" min="0">
+                            <button id="mP26" onclick="return modificaPrecio26(modificaPrecio26);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/apfelstrudel.jpg" width="50%">
+                    </div>
+                </div>
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Tiramisú</p>
+                            <p>Postre italiano con queso mascarpone y café.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio27"></p>
+				            <input id="cambia27" type="number" min="0">
+                            <button id="mP27" onclick="return modificaPrecio27(modificaPrecio27);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/tiramisu.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Brownie</p>
+                            <p>De chocolate y nuez, lo servimos con helado y frutos rojos.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio28"></p>
+				            <input id="cambia28" type="number" min="0">
+                            <button id="mP28" onclick="return modificaPrecio28(modificaPrecio28);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/brownie.jpg" width="50%">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="separator">B E B I D A S   D E   L A   C A S A</div>
+            <div class="row">
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Café shaker</p>
+                            <p>Café frío con crema batida o helado 400 ml.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio29"></p>
+				            <input id="cambia29" type="number" min="0">
+                            <button id="mP29" onclick="return modificaPrecio29(modificaPrecio29);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/cafeshaker.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Congo</p>
+                            <p>Malteada de crema de cacahuate 400 ml.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio30"></p>
+				            <input id="cambia30" type="number" min="0">
+                            <button id="mP30" onclick="return modificaPrecio30(modificaPrecio30);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/congo.jfif" width="50%">
+                    </div>
+                </div>
+                <div class="row-imagen">
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Sweet jackie</p>
+                            <p>Malteada de nutella y jack Daniel's 400 ml.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio31"></p>
+				            <input id="cambia31" type="number" min="0">
+                            <button id="mP31" onclick="return modificaPrecio31(modificaPrecio31);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/sweetjackie.jpg" width="50%">
+                    </div>
+                    <div class="column-menu">
+                        <form action="">
+                            <p>Refresco natural</p>
+                            <p>Frutas naturales con base de agua mineral 400 ml.</p>
+                            <p>Precio actual:</p>
+                            <p id="precio32"></p>
+				            <input id="cambia32" type="number" min="0">
+                            <button id="mP32" onclick="return modificaPrecio32(modificaPrecio32);">MODIFICAR PRECIO</button>
+                        </form>
+                    </div>
+                    <div class="column-menuImg">
+                        <img src="Fotos/Menu/refresconatural.jpg" width="50%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!--Pie de pagina-->
+<footer class="footer">
+    <h2>PIE</h2>
+</footer>
+</html>
+<script type="text/javascript" src="script.js"></script>

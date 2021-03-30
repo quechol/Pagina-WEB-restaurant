@@ -1,0 +1,245 @@
+/*General*/
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*Encabezado*/
+.header {
+    text-align: center;
+    background: white;
+    color: black;
+}
+
+/*Barra de navegacion*/
+.navbar {
+    display: flex;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #000000;
+}
+
+.navbar#active1 {
+    background-color: #000000;
+}
+
+/*Acciones de boton*/
+#li1 a:hover {
+    background-color: #111;
+}
+
+#li1 a.active {
+    background-color: #111;
+    color: white;
+}
+
+#paginaActual {
+    background-color: #111;
+    color: white;
+}
+
+/*Menu despegable*/
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Columnas*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row div { 
+    height: 100%;
+}
+
+.row-imagen{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.medio {
+    flex: 50%;
+    background-color: white;
+    padding: 20px;
+}
+
+.marco{
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.column-collage {
+    -ms-flex: 25; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column-tri {
+    -ms-flex: 30; /* IE10 */
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 4px;
+}
+
+.column-menu {
+    -ms-flex: 30; /* IE10 */
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 4px;
+}
+
+.column-menuImg {
+    -ms-flex: 20; /* IE10 */
+    flex: 20%;
+    max-width: 20%;
+    padding: 4px 4px;
+}
+
+/*Pie de pagina*/
+.footer{
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    color: #ddd; /**/
+}
+
+/*Responsivo*/
+@media screen and (max-width: 800px){
+    .row, .navbar{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+}
+
+/*Imagenes*/
+#logo{
+    width: 15%;
+}
+
+#imagenCostado{
+    padding: 10px;
+    width: 100%;
+}
+
+/*Separador*/
+.separator {
+    text-align: center;
+    height: 0.5em;
+    border-bottom: 2px solid black;
+    margin-bottom: 0.5em;
+}
+.separator:first-line {
+    background-color: white;
+}
+
+/*Redes sociales*/
+.fa:hover {
+      opacity: 0.7;
+}
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}

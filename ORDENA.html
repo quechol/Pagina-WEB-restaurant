@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDENA</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Header-->
+    <div class="header">
+        <img id="logo" src="Brindisi/logo.jpg" alt="">
+    </div>
+</head>
+<body>
+    <!--Barra de navegacion-->
+    <div class="navbar">
+        <a href="Index.html">INICIO</a>
+        <a href="MENU.html">MENU</a>
+        <a id="paginaActual" href="ORDENA.html">ORDENA</a>
+        <div class="dropdown">
+            <button class="dropbtn"> BRINDISI
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="ENCUENTRANOS.html">ENCUENTRANOS</a>
+                <a href="ACERCA.html">ACERCA</a>
+            </div>
+        </div>
+    </div>
+    <!--Contenido-->
+    <div class="row">
+        <div class="side">
+            <h2></h2>
+        </div>
+        <div class="main">
+            <h2>FINALIZA TU PEDIDO</h2>
+            <form>
+                <p>Ingresa tu nombre
+                    <input type="text" id="nombre" size="25" maxlength="30" required placeholder="Nombre">
+                </p>
+                <p>Ingresa tu direccion:
+                    <input type="text" id="direccion" size="25" maxlength="30" required placeholder="Dirección">
+                </p>
+                <p>Ingresa tu número telefonico
+                    <input type="text" id="telefono" size="25" maxlength="30" required placeholder="Telefono">
+                </p>
+                <p>Tu total a pagar es de:</p>
+                <p id="totalAPagar"></p>
+                <button onclick="return confirmar(confirmar);">Aceptar</button>
+            </form>
+        </div>
+    </div>
+</body>
+<!--Pie de pagina-->
+<footer class="footer">
+    <h2>PIE</h2>
+</footer>
+</html>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="scriptStorage.js"></script>
